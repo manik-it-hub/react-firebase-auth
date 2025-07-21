@@ -56,7 +56,7 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your syst
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/react-firebase-auth.git](https://github.com/YOUR_USERNAME/react-firebase-auth.git)
+    git clone https://github.com/manik-it-hub/react-firebase-auth.git
     cd react-firebase-auth
     ```
 
@@ -103,6 +103,6 @@ To run the development server:
 
 ```bash
 npm run dev)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/YOUR_USERNAME/react-firebase-auth/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/react-firebase-auth.svg?style=social)](https://github.com/YOUR_USERNAME/react-firebase-auth/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/manik-it-hub/react-firebase-auth.git-auth/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/manik-it-hub/react-firebase-auth.svg?style=social)](https://github.com/manik-it-hub/react-firebase-auth/stargazers)
 

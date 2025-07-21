@@ -1,0 +1,187 @@
+/* src/components/AuthForm.module.css */
+.authContainer {
+  padding: 2rem;
+  max-width: 500px;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem; /* More rounded corners */
+  box-shadow: 0 10px 15px -3px var(--shadow-color), 0 4px 6px -2px var(--shadow-color); /* Larger shadow */
+  margin: 50px auto; /* Center the box */
+  background-color: white;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.25rem; /* Equivalent to Chakra's 'xl' */
+  margin-bottom: 1.5rem;
+  color: var(--primary-dark-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Spacing between form controls */
+  margin-bottom: 1.5rem;
+}
+
+.formControl {
+  text-align: left;
+}
+
+.formLabel {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--dark-gray);
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem; /* Rounded input fields */
+  font-size: 1rem;
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Focus ring */
+}
+
+.inputGroup {
+  position: relative;
+}
+
+.inputRightElement {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.passwordToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex; /* To center icon */
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-gray);
+}
+
+.passwordToggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.mainButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%; /* Full width button */
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.mainButton:hover {
+  background-color: var(--primary-dark-color);
+  transform: translateY(-1px); /* Subtle lift on hover */
+}
+
+.mainButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.googleButton {
+  background-color: white;
+  color: var(--dark-gray);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem; /* Space between icon and text */
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.googleButton:hover {
+  background-color: #f0f0f0;
+  border-color: #c0c0c0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.divider {
+  border-bottom: 1px solid var(--border-color);
+  margin: 1.5rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.divider span {
+  background-color: white;
+  padding: 0 0.75rem;
+  position: relative;
+  top: 0.7rem;
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+.linkText {
+  font-size: 0.95rem;
+  color: var(--dark-gray);
+  margin-top: 1.5rem;
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+  color: var(--primary-dark-color);
+  text-decoration: underline;
+}
+
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.alert.error {
+  background-color: rgba(220, 53, 69, 0.1); /* Light red background */
+  color: var(--error-color);
+  border: 1px solid var(--error-color);
+}
+
+.alert.success {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: var(--success-color);
+  border: 1px solid var(--success-color);
+}
+
+.alertIcon {
+  margin-right: 0.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}

@@ -23,4 +23,29 @@ dist-ssr
 *.sln
 *.sw?
 
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+/out-tsc
+
+# misc
+.DS_Store
+.env.local
+.env.*.local
+.idea
+.vscode
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Optional: If you have a specific Firebase config file you keep separate (e.g., config.js with API keys)
+# src/firebase-config.js
+
 
